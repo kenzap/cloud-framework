@@ -1,0 +1,208 @@
+// .kenzap .kenzap-pricing-7 :before,
+// .kenzap .kenzap-pricing-7 :after,
+// .kenzap .kenzap-pricing-7 *{
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+
+// .kenzap .kenzap-pricing-7 img,
+// .kenzap .kenzap-pricing-7 ul,
+// .kenzap .kenzap-pricing-7 li,
+// .kenzap .kenzap-pricing-7 p,
+// .kenzap .kenzap-pricing-7 a{
+//   padding: 0;
+//   margin: 0;
+//   box-shadow: none;
+//   border: none;
+//   text-decoration: none;
+//   list-style:none
+// }
+
+// .kenzap .kenzap-pricing-7 .kenzap-container{
+//   max-width:1170px;
+//   padding:0 15px;
+//   margin:0 auto;
+// }
+
+// .kenzap .kenzap-pricing-7.autoPadding {
+//   padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+// }
+
+// .kenzap .kenzap-pricing-7 .kenzap-row{
+//   margin:0 -15px;
+//   overflow:hidden;
+// }
+
+// .kenzap .kenzap-pricing-7 .kenzap-col-6{
+//   width:50%;
+//   float:left;
+//   padding:0 15px;
+// }
+
+// .kenzap .kenzap-pricing-7{
+//   padding:150px 0;
+//   background:#222023
+// }
+
+// .kenzap .kenzap-pricing-7 .pricing-box{
+//   margin:0 0 25px;
+//   position: relative;
+// }
+
+// .kenzap .kenzap-pricing-7 .pricing-box h3{
+//   font-size: 22px;
+//   line-height: 34px;
+//   text-transform: none;
+//   font-weight: 400;
+//   letter-spacing: 0px;
+//   color:#fff;
+//   margin:0;
+// }
+
+// .kenzap .kenzap-pricing-7 .pricing-box p{
+//   font-size: 16px;
+//   font-weight: 400;
+//   letter-spacing: 0px;
+//   line-height: 30px;
+//   text-transform: none;
+//   color:#cbd7e3;
+//   font-style:italic;
+//   display:flex;
+//   display:-webkit-flex;
+//   justify-content:space-between;
+//   -webkit-justify-content:space-between;
+//   align-items:flex-end;
+//   -webkit-align-items:flex-end;
+//   position:relative;
+//   overflow:hidden;
+//   padding:0 1px 0 0
+// }
+
+// .kenzap .kenzap-pricing-7 .pricing-box p span{
+//   background:#222023;
+//   position:relative;
+// }
+
+// .kenzap .kenzap-pricing-7 .pricing-box p span br{
+//   display: none;
+// }
+
+// .kenzap .kenzap-pricing-7 .pricing-box p:before{
+//   content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+//   display:block;
+//   position:absolute;
+//   bottom:0;
+//   white-space:nowrap;
+// }
+
+// .kenzap .kenzap-pricing-7.kenzap-sm .kenzap-col-6,
+// .kenzap .kenzap-pricing-7.kenzap-xs .kenzap-col-6{
+//   width:100%;
+//   float:none;
+//   margin:0 0 30px
+// }
+
+
+// @media screen and (max-width: 48em) {
+//   /* width 768px */
+
+//   .kenzap .kenzap-pricing-7.kenzap-md .kenzap-col-6,
+//   .kenzap .kenzap-pricing-7.kenzap-sm .kenzap-col-6,
+//   .kenzap .kenzap-pricing-7 .kenzap-col-6{
+//     width:100%;
+//     float:none;
+//     margin:0 0 30px
+//   }
+
+// }
+
+// @media screen and (max-width: 40em) {
+//   /* width 480px */
+
+//   .kenzap .kenzap-pricing-7 .pricing-box p:before{
+//     display:none
+//   }
+
+
+// }
+
+.kenzap .kenzap-pricing-7 .remove {
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  right: 24px;
+  padding: 0;
+  border: 0;
+  background: #fff;
+  border-radius: 50%;
+  color: #000;
+  z-index: 99;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  font-family: dashicons;
+  font-weight: 400;
+  font-style: normal;
+  vertical-align: top;
+
+  &:hover {
+    color: #CCC;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.kenzap .kenzap-pricing-7 .pricing-box:hover .remove, .kenzap .kenzap-pricing-7 .kenzap-col-6:hover .remove {
+  opacity: 1;
+}
+
+.kenzap .kenzap-pricing-7 .addWhite {
+  position: absolute;
+  display: none;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+  padding: 5px;
+  border: 0;
+  background: white;
+  box-shadow: inset 0 0 50px white;
+  color: rgba(10, 24, 41, 0.7);
+  cursor: pointer;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &:hover {
+    color: #191e23;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.kenzap .kenzap-pricing-7 {
+  position: relative;
+}
+
+.kenzap .kenzap-pricing-7.selected {
+
+  & .addWhite {
+    display: flex;
+  }
+
+  .editPadding {
+    padding: 0 0 100px;
+  }
+}
+

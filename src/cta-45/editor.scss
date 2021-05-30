@@ -1,0 +1,440 @@
+// .kenzap .kenzap-pricing-3 :before,
+// .kenzap .kenzap-pricing-3 :after,
+// .kenzap .kenzap-pricing-3 *{
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+
+// .kenzap .kenzap-pricing-3 img,
+// .kenzap .kenzap-pricing-3 ul,
+// .kenzap .kenzap-pricing-3 li,
+// .kenzap .kenzap-pricing-3 p,
+// .kenzap .kenzap-pricing-3 a{
+//   padding: 0;
+//   margin: 0;
+//   box-shadow: none;
+//   border: none;
+//   text-decoration: none;
+//   list-style:none
+// }
+
+// .kenzap .kenzap-pricing-3 .kenzap-container{
+//   max-width:1170px;
+//   padding:0 15px;
+//   margin:0 auto;
+// }
+
+// .kenzap .kenzap-pricing-3.autoPadding {
+//   padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+// }
+
+// .kenzap .kenzap-pricing-3 .kenzap-row{
+//   margin:0 -15px;
+//   overflow:hidden;
+// }
+
+// .kenzap .kenzap-pricing-3 .kenzap-col-4{
+//   width:33.33333%;
+//   float:left;
+//   padding:0 15px;
+//   position: relative;
+// }
+
+// .kenzap .kenzap-pricing-3{
+//   background:#f8fafe;
+//   padding:80px 0 50px;
+// }
+
+// .kenzap .kenzap-pricing-3 .tabs-nav {
+//   -webkit-box-shadow: 0 15px 25px 0 rgba(0,0,0,.1);
+//   box-shadow: 0 15px 25px 0 rgba(0,0,0,.1);
+//   border-radius: 1.6666666667rem;
+//   max-width: 326px;
+//   margin: 0 auto 60px;
+//   background: #0c5adb;
+//   -webkit-box-pack: center;
+//   -ms-flex-pack: center;
+//   justify-content: center;
+//   -webkit-justify-content: center;
+//   padding: 2px 0;
+//   z-index: 1;
+//   position: relative;
+// }
+
+// .kenzap .kenzap-pricing-3 .tabs-nav ul{
+//   padding:0 2px;
+//   list-style:none;
+//   margin:0;
+// }
+
+// .kenzap .kenzap-pricing-3 .tabs-nav ul li{
+//   display: inline-block;
+//   width: calc(calc(100% /2) - 0px);
+// }
+
+.kenzap .kenzap-pricing-3 .tabs-nav ul li a{
+  display: block;
+  color: #fff;
+  color: var(--textColorBestSeller);
+  background: var(--blueColor);
+  font-size:16px;
+  line-height:27px;
+  min-width: 125px;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  padding: 8px 31px;
+  text-align: center;
+  border-radius: 1.5333333333rem;
+  text-decoration:none;
+  min-height: 43px;
+
+  & input {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    border: 0;
+    width: 20px;
+    color:inherit;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// .kenzap .kenzap-pricing-3 .tabs-nav ul li.active a{
+//   background:#fff;
+//   color:#0c5adb;
+//   color: var(--blueColor);
+//   background: var(--textColorBestSeller);
+//   min-height: 43px;
+// }
+
+// .kenzap .kenzap-pricing-3 .tab-content{
+//   display:none
+// }
+
+// .kenzap .kenzap-pricing-3 .pricing-box{
+//   background: #fff;
+//   -webkit-box-shadow: 0 10px 10px 0 rgba(0,0,0,.08);
+//   box-shadow: 0 10px 10px 0 rgba(0,0,0,.08);
+//   text-align: center;
+//   padding: 40px;
+//   border-radius: 5px;
+//   border: 1px solid #efefef;
+//   position: relative;
+//   z-index: 1;
+//   overflow: hidden;
+//   margin:0 0 30px;
+// }
+
+// .kenzap .kenzap-pricing-3 .pricing-box.best-seller{
+//   background: #0c5adb
+// }
+
+// .kenzap .kenzap-pricing-3 .pricing-box img{
+//   margin:0 auto 25px;
+// }
+
+// .kenzap .kenzap-pricing-3 .pricing-box h3{
+//   text-transform: uppercase;
+//   margin:0 0 25px;
+//   font-weight: 700;
+//   font-size: 24px;
+//   color: #192225;
+//   line-height: 28px;
+// }
+
+.kenzap .kenzap-pricing-3 .pricing-box .kp-price{
+  display:block;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height:2rem;
+  margin-bottom: 0;
+  color: #0c5adb;
+  margin:0 0 30px;
+
+  & input {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    border: 0;
+    width: 20px;
+    color:inherit;
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// .kenzap .kenzap-pricing-3 .pricing-box.best-seller h3,
+// .kenzap .kenzap-pricing-3 .pricing-box.best-seller .kp-price,
+// .kenzap .kenzap-pricing-3 .pricing-box.best-seller ul li{
+//   color: inherit;
+// }
+
+.kenzap .kenzap-pricing-3 .pricing-box .kp-price sup{
+  display: inline-block;
+  vertical-align: top;
+  top: -.5em;
+  font-weight: 700;
+  font-size: 2rem;
+  position: relative;
+  line-height: 0;
+  vertical-align: baseline;
+
+  & input {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    border: 0;
+    width: 20px;
+    color:inherit;
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.kenzap .kenzap-pricing-3 .pricing-box .kp-price sub{
+  display: inline-block;
+  font-size: 1.3333333333rem;
+  font-weight: 400;
+  bottom: 0;
+  position: relative;
+  line-height: 0;
+  vertical-align: baseline;
+
+  & input {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    border: 0;
+    width: 20px;
+    color:inherit;
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// .kenzap .kenzap-pricing-3 .pricing-box ul{
+//   padding:0 0 30px;
+//   list-style:none;
+//   margin:0;
+// }
+
+// .kenzap .kenzap-pricing-3 .pricing-box ul li{
+//   margin-bottom: 18px;
+//   font-size: inherit;
+//   font-weight:400;
+//   color: inherit;
+//   line-height: 1.7333333333;
+// }
+
+// .kenzap .kenzap-pricing-3 .pricing-box ul li:last-child{
+//   margin:0;
+// }
+
+.kenzap .kenzap-pricing-3 .pricing-box .kp-link{
+  display:inline-block;
+  background: #0c5adb;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  height: 55px;
+  padding: 0 51px;
+  line-height: 55px;
+  text-decoration:none;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  white-space: normal;
+
+  & input {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    background: transparent;
+    border: 0;
+    width: 20px;
+    color:inherit;
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+// .kenzap .kenzap-pricing-3 .pricing-box .kp-link:hover{
+//   background:#00138e
+// }
+
+// .kenzap .kenzap-pricing-3 .pricing-box.best-seller .kp-link{
+//   background:#fff;
+//   color:#0c5adb
+// }
+
+// .kenzap .kenzap-pricing-3.kenzap-sm .kp-pricing-table .kenzap-row{
+//   display:flex;
+//   display:-webkit-flex;
+//   align-items:center;
+//   -webkit-align-items:center;
+//   justify-content:center;
+//   -webkit-justify-content:center;
+//   flex-wrap:wrap;
+//   -webkit-flex-wrap:wrap
+// }
+
+// .kenzap .kenzap-pricing-3.kenzap-sm .kenzap-col-4{
+//   width:50%;
+//   float:none;
+// }
+
+// .kenzap .kenzap-pricing-3.kenzap-xs .kenzap-col-4{
+//   width:100%;
+//   float:none;
+// }
+
+// @media screen and (max-width: 61.938em) {
+//   /* width: 991px; */
+
+//   .kenzap .kenzap-pricing-3 .kp-pricing-table .kenzap-row{
+//     display:flex;
+//     display:-webkit-flex;
+//     align-items:center;
+//     -webkit-align-items:center;
+//     justify-content:center;
+//     -webkit-justify-content:center;
+//     flex-wrap:wrap;
+//     -webkit-flex-wrap:wrap
+//   }
+
+//   .kenzap .kenzap-pricing-3 .kenzap-col-4{
+//     width:50%;
+//     float:none;
+//   }
+// }
+
+// @media screen and (max-width: 48em) {
+//   /* width 768px */
+
+//   .kenzap .kenzap-pricing-3.kenzap-sm .kenzap-col-4,
+//   .kenzap .kenzap-pricing-3 .kenzap-col-4{
+//     width:100%;
+//     float:none;
+//   }
+// }
+.kenzap .kenzap-pricing-3 .remove {
+  opacity: 0;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
+  border: 0;
+  background: #000;
+  border-radius: 50%;
+  color: white;
+  z-index: 99;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  font-family: dashicons;
+  font-weight: 400;
+  font-style: normal;
+  vertical-align: top;
+
+  &:hover {
+    color: #CCC;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.kenzap .kenzap-pricing-3 .kenzap-col-4:hover .remove {
+  opacity: 1;
+}
+
+.kenzap .kenzap-pricing-3 .addWhite {
+  position: absolute;
+  display: none;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+  padding: 5px;
+  border: 0;
+  background: white;
+  box-shadow: inset 0 0 50px white;
+  color: rgba(10, 24, 41, 0.7);
+  cursor: pointer;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &:hover {
+    color: #191e23;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.kenzap .kenzap-pricing-3 {
+  position: relative;
+}
+
+.kenzap .kenzap-pricing-3.selected {
+
+  & .addWhite {
+    display: flex;
+  }
+
+  .editPadding {
+    padding: 0 0 100px;
+  }
+}
+
+.kenzap .kenzap-pricing-3 .errorMessage {
+  margin-top: 10px;
+  background: red;
+  padding: 10px;
+  color: white;
+  transition: all .2ms;
+  opacity: 0;
+  text-align: center;
+}
+
+.kenzap .kenzap-pricing-3 .errorShow {
+  opacity: 1;
+}

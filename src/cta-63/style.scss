@@ -1,0 +1,52 @@
+.kenzap .kcl2 div,
+.kenzap .kcl2 img,
+.kenzap .kcl2 ul,
+.kenzap .kcl2 li,
+.kenzap .kcl2 p,
+.kenzap .kcl2 a{
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+	border: none;
+	text-decoration: none;
+	list-style:none
+}
+
+.kenzap .kcl2 .kenzap-container{
+	max-width:1170px;
+	padding:0 0px;
+	margin:0 auto;
+}
+
+.kenzap .kcl2.autoPadding {
+	padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0!important;
+}
+
+.kenzap .kcl2 .cload{
+	opacity: 0;
+}
+
+.kenzap .kcl2 .owl-load{
+	display: inline-flex;
+	vertical-align: middle;
+}
+
+.kenzap .kcl2 ul{
+	padding:0;
+	list-style:none;
+	margin: 0;
+	transition: opacity .5s ease-in-out;
+	//display: inline-flex;
+    overflow: hidden;
+}
+
+.kenzap .kcl2 ul li a img{
+	-webkit-transition: transform .5s ease-in-out;
+	-moz-transition: transform .5s ease-in-out;
+	transition: transform .5s ease-in-out;
+	max-width: unset;
+}
+
+.kenzap .kcl2 ul li:hover a img{
+	transform: scale(1.05);
+}

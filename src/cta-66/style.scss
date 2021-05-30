@@ -1,0 +1,99 @@
+.kenzap .kphd-1:before,
+.kenzap .kphd-1:after,
+.kenzap .kphd-1 *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kphd-1 .kp-h,
+.kenzap .kphd-1 img,
+.kenzap .kphd-1 ul,
+.kenzap .kphd-1 li,
+.kenzap .kphd-1 p,
+.kenzap .kphd-1 a{
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style:none
+}
+
+.kenzap .kphd-1 .kenzap-tcont{
+  margin:0 auto;
+  padding:0 var(--paddings2,0);
+  width: 100%;
+  text-align:center;
+}
+
+.kenzap .kphd-1.autoPadding {
+  padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kphd-1 .kenzap-tcont:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.kenzap .kphd-1{
+  position:relative;
+  background-repeat:no-repeat;
+  background-position:center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display:block;
+  transition:all .3s
+}
+
+.kenzap .kphd-1 .kp-h{
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  //position:relative;
+  text-align:center;
+  transform-style: preserve-3d;
+}
+
+.kenzap .kphd-1 .kp-h:after{
+  box-sizing: border-box;
+  display: none;
+  display: var(--icond, 'none');
+  width: var(--iconWidth, 40px);
+  height: var(--iconHeight, 40px);
+  top: var(--iconTop, auto);
+  right: var(--iconRight, auto);
+  bottom: var(--iconBottom, auto);
+  left: var(--iconLeft, auto);
+  mask-image: var(--icon, 'unset'); 
+  mask-size: cover;
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  background-color: var(--textColor2, #333);
+  transform: translateZ(-1px);
+}
+
+.kenzap .aligncenter .kphd-1{
+  text-align: center;
+}
+
+@media screen and (max-width: 48em) {
+  .kenzap .kphd-1 .kp-h{
+      font-size: var(--fst )!important;
+  }
+}
+
+@media screen and (max-width: 30em) {
+  .kenzap .kphd-1 .kp-h{
+    font-size: var(--fsm )!important;
+  }
+}

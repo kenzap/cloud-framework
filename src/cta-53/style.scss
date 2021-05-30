@@ -1,0 +1,201 @@
+.kenzap .kenzap-gallery-5.autoPadding {
+  padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kenzap-gallery-5 :before,
+.kenzap .kenzap-gallery-5 :after,
+.kenzap .kenzap-gallery-5 *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kenzap-gallery-5 img,
+.kenzap .kenzap-gallery-5 ul,
+.kenzap .kenzap-gallery-5 li,
+.kenzap .kenzap-gallery-5 p,
+.kenzap .kenzap-gallery-5 a{
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style:none
+}
+
+.kenzap .kenzap-gallery-5 .kenzap-container{
+  max-width:1270px;
+  padding:0 var(--paddings2,0);
+  margin:0 auto;
+}
+
+.kenzap .kenzap-gallery-5 .kp-list{
+  opacity: 0.1;
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .grid-sizer{
+  width:33.33333%;
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .kp-iitem{
+  width:33.33333%;
+  padding:0 2.5px;
+  overflow:hidden
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .width-22{
+  width:22%;
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .width-43{
+  width:43%;
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .width-35{
+  width:35%;
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .width-40{
+  width:40%;
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .width-20{
+  width:20%;
+}
+
+.kenzap .kenzap-gallery-5 .kp-list{
+  margin:0 -2.5px;
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .gallery-box{
+  position:relative;
+  overflow:hidden;
+  margin:0 0 5px;
+
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .kp-img > a{
+  background-size:cover;
+  background-position:center center;
+  display:block;
+  cursor:zoom-in;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  opacity:1;
+  height:388px;
+  display:block;
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .kp-img:hover a{
+  opacity:var(--overlayOpacity);
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .kp-img > a.nothing{
+  cursor: default;
+}
+.kenzap .kenzap-gallery-5 .kp-list .kp-img > a.link{
+  cursor: pointer;
+}
+
+.kenzap .kenzap-gallery-5 .kp-list .kp-img{
+  width:100%;
+  overflow:hidden;
+}
+
+.kenzap .kenzap-gallery-5 .fancybox-thumbs {
+  top: auto;
+  width: auto;
+  bottom: 0;
+  left: 0;
+  right : 0;
+  height: 95px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+  text-align:Center
+}
+
+.kenzap .kenzap-gallery-5 .fancybox-show-thumbs .fancybox-inner {
+  right: 0;
+  bottom: 95px;
+}
+
+.kenzap .kenzap-gallery-5 .fancybox-thumbs__list{
+  display:inline-block
+}
+
+.kenzap .kenzap-gallery-5 .fancybox-infobar{
+  font-family: Roboto,sans-serif;
+  font-size: 18px;
+}
+
+.kenzap .kenzap-gallery-5 .fancybox-thumbs__list a::before {
+  border: 6px solid #fff;
+}
+
+.kenzap .kenzap-gallery-5 .fancybox-thumbs__list a{
+  opacity:.8;
+  transition: all .2s cubic-bezier(.25,.46,.45,.94);
+}
+
+.kenzap .kenzap-gallery-5 .fancybox-thumbs__list a.fancybox-thumbs-active{
+  opacity:1
+}
+
+.kenzap .kenzap-gallery-5.kenzap-md .kp-list .kp-img > a,
+.kenzap .kenzap-gallery-5.kenzap-xs .kp-list .kp-img > a,
+.kenzap .kenzap-gallery-5.kenzap-sm .kp-list .kp-img > a{
+  height:200px
+}
+
+.kenzap .kenzap-gallery-5.kenzap-sm .kp-list .kp-iitem{
+  width:50%;
+}
+
+
+.kenzap .kenzap-gallery-5.kenzap-xs .kp-list .kp-iitem{
+  width:100%;
+}
+
+@media only screen and (min-width: 62px) and (max-width: 75em) {
+  /* 992px and 1200px */
+  .kenzap .kenzap-gallery-5 .kp-list .kp-img > a{
+    height:260px
+  }
+}
+
+
+@media screen and (max-width: 61.938em) {
+  /* width: 991px; */
+
+  .kenzap .kenzap-gallery-5 .kp-list .kp-img > a{
+    height:200px
+  }
+  
+  .kenzap .kenzap-gallery-5 .fancybox-thumbs {
+    display:none
+  }
+
+  .kenzap .kenzap-gallery-5 .fancybox-show-thumbs .fancybox-inner {
+    bottom: 0;
+  }
+}
+
+
+@media screen and (max-width: 48em) {
+  /* width 768px */
+
+  .kenzap .kenzap-gallery-5 .kp-list .kp-iitem{
+    width:50%;
+  }
+}
+
+
+@media screen and (max-width: 30em) {
+  /* width 480px */
+
+  .kenzap .kenzap-gallery-5.kenzap-sm .kp-list .kp-iitem,
+  .kenzap .kenzap-gallery-5 .kp-list .kp-iitem{
+    width:100%;
+  }
+}

@@ -1,0 +1,365 @@
+.kenzap .kenzap-timeline-4 :before,
+.kenzap .kenzap-timeline-4 :after,
+.kenzap .kenzap-timeline-4 *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kenzap-timeline-4 :before,
+.kenzap .kenzap-timeline-4 :after{
+  -webkit-box-sizing: unset;
+	-moz-box-sizing: unset;
+	box-sizing: unset;
+}
+
+.kenzap .kenzap-timeline-4 .kenzap-container{
+  max-width:1140px;
+  padding:0 15px;
+  margin:0 auto;
+}
+
+.kenzap .kenzap-timeline-4.autoPadding {
+  padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .timeline-content {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  min-height: 400px;
+  position:relative;
+}
+
+.kenzap .kenzap-timeline-4 .timeline:before{
+  content:"";
+  display:block;
+  height:1px;
+  background:#fff;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto
+}
+
+.kenzap .kenzap-timeline-4 .owl-carousel .owl-stage {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(odd) .timeline-content .time-wrapper{
+  order:2;
+  -webkit-flex-grow:1;
+  flex-grow:1;
+  flex-basis:0;
+  -webkit-flex-basis:0;
+  display:flex;
+  display:-webkit-flex;
+  align-items:flex-start;
+  -webkit-align-items:flex-start;
+  position:relative;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(even) .timeline-content .info-wrapper{
+  order:2;
+  -webkit-flex-grow:1;
+  flex-grow:1;
+  flex-basis:0;
+  -webkit-flex-basis:0;
+  display:flex;
+  display:-webkit-flex;
+  align-items:flex-start;
+  -webkit-align-items:flex-start;
+  position:relative;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(odd) .timeline-content .info-wrapper{
+  order:1;
+  flex-grow:1;
+  -webkit-flex-grow:1;
+  flex-basis:0;
+  -webkit-flex-basis:0;
+  display:flex;
+  display:-webkit-flex;
+  align-items:flex-end;
+  -webkit-align-items:flex-end;
+  position:relative;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(even) .timeline-content .time-wrapper{
+  order:1;
+  flex-grow:1;
+  -webkit-flex-grow:1;
+  flex-basis:0;
+  -webkit-flex-basis:0;
+  display:flex;
+  display:-webkit-flex;
+  align-items:flex-end;
+  -webkit-align-items:flex-end;
+  position:relative;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(odd) .timeline-content .info-wrapper .info:before{
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(121, 84, 255, 0);
+  border-top-color: var(--backgroundColor);
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(even) .timeline-content .info-wrapper .info:before{
+  bottom: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(121, 84, 255, 0);
+  border-bottom-color: var(--backgroundColor);
+  border-width: 7px;
+  margin-left: -7px;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(odd) .timeline-content.current-time .info-wrapper .info:before{
+  border-top-color: #fff;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(even) .timeline-content.current-time .info-wrapper .info:before{
+  border-bottom-color: #fff;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-nav button.owl-prev{
+  position:absolute;
+  top:0;
+  left:-30px;
+  bottom:0;
+  margin:auto;
+  height:26px;
+  z-index:999;
+  opacity:.5;
+  transition:all .5s;
+  outline:none;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-nav button.owl-next{
+  position:absolute;
+  top:0;
+  right:-30px;
+  bottom:0;
+  margin:auto;
+  height:26px;
+  z-index:999;
+  opacity:.5;
+  transition:all .5s;
+  outline:none;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-nav button.owl-prev span{
+  text-indent:-999999px;
+  width:15px;
+  height:26px;
+  background:url(./timeline-4/left-arrow.svg) no-repeat center center;
+  background-size:15px auto;
+  display:block;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-nav button.owl-next span{
+  text-indent:-999999px;
+  width:15px;
+  height:26px;
+  background:url(./timeline-4/right-arrow.svg) no-repeat center center;
+  background-size:15px auto;
+  display:block;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-nav button.owl-next:hover,
+.kenzap .kenzap-timeline-4 .timeline .owl-nav button.owl-prev:hover{
+  opacity:1
+}
+
+.kenzap .kenzap-timeline-4 .timeline .timeline-content .time{
+  text-align:center;
+  width:100%;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .timeline-content .info{
+  padding:0 30px;
+  background: var(--backgroundColor);
+  position:relative;
+  box-shadow: 0 0 25px 0 rgba(0, 0, 0, .1);
+  height:90px;
+  border-radius: var(--borderRadius);
+  width:180px;
+  display:flex;
+  display:-webkit-flex;
+  align-items:center;
+  -webkit-align-items:center;
+  justify-content:center;
+  -webkit-justify-content:center;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .timeline-content.current-time .info{
+  background:#fff
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(odd) .timeline-content .time{
+  margin:30px 0 0;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(even) .timeline-content .time{
+  margin:0 0 30px;
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(odd) .timeline-content .info{
+  margin:0 5px 50px;
+  transition:all .5s
+}
+
+.kenzap .kenzap-timeline-4 .timeline .owl-item:nth-child(even) .timeline-content .info{
+  margin:50px 5px 0;
+  transition:all .5s
+}
+
+.kenzap .kenzap-timeline-4.kp-animate .timeline .owl-item .timeline-content:hover .info-wrapper:after{
+  animation: kenzapWave 1.3s linear infinite;
+}
+
+.kenzap .kenzap-timeline-4.kp-animate .timeline .owl-item .timeline-content:hover .info-wrapper .info{
+  transform: scale(1.03);
+}
+
+@keyframes kenzapWave {
+  0%   {opacity: 1;}
+  25%  {opacity: 0.7;transform: scale(1.2);}
+  50%  {opacity: 0.5;transform: scale(1.4);}
+  75%  {opacity: 0.3;transform: scale(1.55);}
+  100% {opacity: 0;transform: scale(1.7);}
+}
+
+.kenzap .kenzap-timeline-4 .timeline .timeline-content .time strong{
+  margin:0;
+  // color:var(--textColor);
+  // font-size:16px;
+  // line-height:16px;
+  // font-weight:300;
+  //opacity:0.5
+}
+
+.kenzap .kenzap-timeline-4 .timeline .timeline-content.current-time .time strong{
+  opacity:1
+}
+
+.kenzap .kenzap-timeline-4 .timeline .timeline-content .info h3{
+  margin:0;
+  // color: var(--textColor);
+  // font-size:14px;
+  // line-height:18px;
+  // font-weight:700;
+  text-align:center
+}
+
+.kenzap .kenzap-timeline-4 .timeline .timeline-content.current-time .info h3{
+  color: var(--backgroundColor)!important;
+}
+
+
+.kenzap .kenzap-timeline-4 .remove {
+  opacity: 0;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  padding: 0;
+  border: 0;
+  background: #fff;
+  border-radius: 50%;
+  color: #000;
+  z-index: 99;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  font-family: dashicons;
+  font-weight: 400;
+  font-style: normal;
+  vertical-align: top;
+
+  &:hover {
+    color: #CCC;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.kenzap .kenzap-timeline-4 .timeline-content:hover .remove {
+  opacity: 1;
+}
+
+.kenzap .kenzap-timeline-4 .addWhite {
+  position: absolute;
+  display: none;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+  padding: 5px;
+  border: 0;
+  background: white;
+  box-shadow: inset 0 0 50px white;
+  color: rgba(10, 24, 41, 0.7);
+  cursor: pointer;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &:hover {
+    color: #191e23;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.kenzap .kenzap-timeline-4 {
+  position: relative;
+  transition: all .2s;
+}
+
+.kenzap .kenzap-timeline-4 .editPadding {
+  transition: all .2s;
+}
+
+.kenzap .kenzap-timeline-4.selected {
+
+  & .addWhite {
+    display: flex;
+  }
+
+  .editPadding {
+    padding: 0 0 100px;
+  }
+}
+

@@ -1,0 +1,126 @@
+.kenzap .kenzap-pricing-7 :before,
+.kenzap .kenzap-pricing-7 :after,
+.kenzap .kenzap-pricing-7 *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kenzap-pricing-7 img,
+.kenzap .kenzap-pricing-7 ul,
+.kenzap .kenzap-pricing-7 li,
+.kenzap .kenzap-pricing-7 p,
+.kenzap .kenzap-pricing-7 a{
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style:none
+}
+
+.kenzap .kenzap-pricing-7 .kenzap-container{
+  max-width:1170px;
+  padding:0 var(--paddings2,0);
+  margin:0 auto;
+  overflow-x: hidden;
+}
+
+.kenzap .kenzap-pricing-7.autoPadding {
+  padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kenzap-pricing-7 .kenzap-row{
+  margin:0 -15px;
+  overflow:hidden;
+}
+
+.kenzap .kenzap-pricing-7 .kenzap-col-6{
+  width:50%;
+  float:left;
+  padding:0 15px;
+}
+
+.kenzap .kenzap-pricing-7{
+  padding:150px 0;
+  //background:#222023
+}
+
+.kenzap .kenzap-pricing-7 .pricing-box{
+  margin:0 0 25px;
+}
+
+.kenzap .kenzap-pricing-7 .pricing-box h3{
+  // font-size: 22px;
+  // line-height: 34px;
+  text-transform: none;
+  //font-weight: 400;
+  letter-spacing: 0px;
+  color:#fff;
+  margin:0;
+}
+
+.kenzap .kenzap-pricing-7 .pricing-box p{
+  // font-size: 16px;
+  // font-weight: 400;
+  letter-spacing: 0px;
+  //line-height: 30px;
+  text-transform: none;
+  color:#cbd7e3;
+  //font-style:italic;
+  display:flex;
+  display:-webkit-flex;
+  justify-content:space-between;
+  -webkit-justify-content:space-between;
+  align-items:flex-end;
+  -webkit-align-items:flex-end;
+  position:relative;
+  overflow:hidden;
+  padding:0 1px 0 0
+}
+
+.kenzap .kenzap-pricing-7 .pricing-box p span{
+  background:var(--backgroundColor,#222023);
+  position:relative
+}
+
+
+.kenzap .kenzap-pricing-7 .pricing-box p:before{
+  content: ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+  display:block;
+  position:absolute;
+  bottom:0;
+  white-space:nowrap;
+  color:var(--titleColor);
+}
+
+.kenzap .kenzap-pricing-7.kenzap-sm .kenzap-col-6,
+.kenzap .kenzap-pricing-7.kenzap-xs .kenzap-col-6{
+  width:100%;
+  float:none;
+  margin:0 0 30px
+}
+
+
+@media screen and (max-width: 48em) {
+  /* width 768px */
+
+  .kenzap .kenzap-pricing-7.kenzap-md .kenzap-col-6,
+  .kenzap .kenzap-pricing-7.kenzap-sm .kenzap-col-6,
+  .kenzap .kenzap-pricing-7 .kenzap-col-6{
+    width:100%;
+    float:none;
+    margin:0 0 30px
+  }
+
+}
+
+@media screen and (max-width: 40em) {
+  /* width 480px */
+
+  .kenzap .kenzap-pricing-7 .pricing-box p:before{
+    display:none
+  }
+
+
+}

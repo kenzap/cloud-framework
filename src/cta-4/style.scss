@@ -1,0 +1,190 @@
+.kenzap .kpcta4:before,
+.kenzap .kpcta4:after,
+.kenzap .kpcta4 *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kpcta4 h2,
+.kenzap .kpcta4 ul,
+.kenzap .kpcta4 li,
+.kenzap .kpcta4 p,
+.kenzap .kpcta4 a{
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style:none
+}
+
+.kenzap .kpcta4 .clearfix:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.kenzap .kpcta4.autoPadding {
+  padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kpcta4 .kenzap-container {
+  max-width: 1270px;
+  margin:0 auto;
+  padding:0 var(--paddings2,0);
+}
+
+.kenzap .kpcta4 .kenzap-container:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.kenzap .kpcta4{
+  background:transparent;
+}
+
+.kenzap .kpcta4 .kp-content{
+  padding:0px 0px;
+  text-align:center;
+}
+
+.kenzap .kpcta4 .kp-content .kp-h2,
+.kenzap .kpcta4 .kp-content h2{
+  color:var(--textColor, #fff);
+  font-size: var(--titleSize, 36px);
+  margin:0 0 20px;
+  font-weight:var(--textThickness, 700);
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  text-align: center;
+  text-rendering: optimizelegibility;
+}
+
+.kenzap .kpcta4.kp-left .kp-content,
+.kenzap .kpcta4.kp-left .kp-content .kp-p,
+.kenzap .kpcta4.kp-left .kp-content .kp-h2{
+  text-align: left;
+  margin-left:0; 
+}
+
+.kenzap .kpcta4.kp-right .kp-content,
+.kenzap .kpcta4.kp-right .kp-content .kp-p,
+.kenzap .kpcta4.kp-right .kp-content .kp-h2{
+  text-align: right;
+  margin-right:0; 
+}
+
+.kenzap .kpcta4 .kp-content .kp-p,
+.kenzap .kpcta4 .kp-content p{
+  font-size: var(--descriptionSize, 14px);
+  font-weight: 400;
+  line-height: 1.8;
+  width:60%;
+  margin: 0 auto 20px;
+  overflow-wrap: break-word;
+  text-align: center;
+  color:var(--textColor, #fff);
+}
+
+.kenzap .kpcta4 .kp-content .cta-btn-1{
+  border: 1px solid var(--textColor2, #fff);
+  padding: 16px 10px;
+  min-width:176px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-size:14px;
+  letter-spacing:1;
+  line-height:14px;
+  display:inline-block;
+  text-align: center;
+  margin:15px 7.5px 0;
+}
+
+.kenzap .kpcta4.kp-left .kp-content .cta-btn-1{
+  margin-left: 0;
+}
+
+.kenzap .kpcta4 .kp-content .cta-btn-2{
+  border:1px solid var(--textColor2, #fff);
+  padding: 16px 10px;
+  min-width:176px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  font-size:14px;
+  letter-spacing:1;
+  line-height:14px;
+  display:inline-block;
+  text-align: center;
+  margin:15px 7.5px 0;
+}
+
+.kenzap .kpcta4.kp-right .kp-content .cta-btn-2{
+  margin-right: 0;
+}
+
+.kenzap .kpcta4 .kp-content .cta-btn-1:hover{
+  color:var(--hcl, transparent)!important;
+  background:var(--hbacl, transparent)!important;
+  border-color:var(--hbrcl, transparent)!important;
+}
+
+.kenzap .kpcta4 .kp-content .cta-btn-2:hover{
+  color:var(--hcl, transparent)!important;
+  background:var(--hbacl, transparent)!important;
+  border-color:var(--hbrcl, transparent)!important;
+}
+
+.kenzap .kpcta4.kenzap-md .kp-content p{
+  width:70%
+}
+
+.kenzap .kpcta4.kenzap-sm .kp-content p{
+  width:90%
+}
+
+.kenzap .kpcta4.kenzap-xs .kp-content p{
+  width:100%
+}
+
+@media screen and (max-width: 61.938em) {
+  /* width: 991px; */
+
+  .kenzap .kpcta4 .kp-content .kp-h2{
+    font-size: var(--fst, 33px)!important;
+  }
+
+  .kenzap .kpcta4 .kp-content p{
+    width:70%
+  }
+}
+
+@media screen and (max-width: 48em) {
+  /* width 768px */
+
+  .kenzap .kpcta4.kenzap-md .kp-content p,
+  .kenzap .kpcta4 .kp-content p{
+    width:90%
+  }
+}
+
+@media screen and (max-width: 30em) {
+  /* width 480px */
+
+  .kenzap .kpcta4 .kp-content .kp-h2{
+    font-size: var(--fsm, 33px)!important;
+  }
+
+  .kenzap .kpcta4.kenzap-sm .kp-content p,
+  .kenzap .kpcta4.kenzap-md .kp-content p,
+  .kenzap .kpcta4 .kp-content p{
+    width:100%
+  }
+}

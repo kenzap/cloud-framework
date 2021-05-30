@@ -1,0 +1,643 @@
+.kenzap .kenzap-gallery-1 :before,
+.kenzap .kenzap-gallery-1 :after,
+.kenzap .kenzap-gallery-1 *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kenzap-gallery-1 img,
+.kenzap .kenzap-gallery-1 ul,
+.kenzap .kenzap-gallery-1 li,
+.kenzap .kenzap-gallery-1 p,
+.kenzap .kenzap-gallery-1 a{
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style:none
+}
+
+.kenzap .kenzap-gallery-1 .kenzap-container{
+  max-width:1270px;
+  padding:0 var(--paddings2,0);
+  margin:0 auto;
+  overflow-x: hidden;
+}
+
+.kenzap .kenzap-gallery-1.autoPadding {
+  padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kenzap-gallery-1 .kp-filter{
+  margin:0px;
+  text-align:center
+}
+
+.kenzap .kenzap-gallery-1 .kp-filter li {
+  display:inline-block;
+  position:relative;
+}
+
+.kenzap .kenzap-gallery-1 .kp-filter li:after{
+  content: "/";
+  font-size: 14px;
+  font-size: var(--filtersSize);
+  color: var(--titleColor);
+  font-style: italic;
+  position: absolute;
+  right: -5px;
+  top: 1px;
+}
+
+.kenzap .kenzap-gallery-1 .kp-filter li:last-child::after{
+  display:none
+}
+
+.kenzap .kenzap-gallery-1 .kp-filter li a{
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: .05em;
+  display: inline-block;
+  line-height: 20px;
+  margin:0 10px;
+  padding: 0 5px;
+  vertical-align: middle;
+  z-index: 8;
+  position: relative;
+  color: var(--descriptionAndFiltersColor);
+  -webkit-transition: color .2s ease-out;
+  -moz-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+}
+.kenzap .kenzap-gallery-1 .kp-filter li a span {
+  line-height: 1.8;
+}
+
+.kenzap .kenzap-gallery-1 .kp-filter li a:before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--titleColor);
+  opacity: 0;
+}
+
+.kenzap .kenzap-gallery-1 .kp-filter li a.active,
+.kenzap .kenzap-gallery-1 .kp-filter li:hover a{
+  color:var(--titleColor);
+}
+
+.kenzap .kenzap-gallery-1 .kp-filter li a.active:before,
+.kenzap .kenzap-gallery-1 .kp-filter li:hover a:before{
+  opacity:1
+}
+
+.kenzap .kenzap-gallery-1 .kp-list{
+  margin:0 -15px;
+}
+
+.kenzap .kenzap-gallery-1 .kp-list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.kenzap .kenzap-gallery-1.kp-square .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.kp-square .kp-list .kp-item{
+  width:33.33333%;
+  padding:0 15px;
+  float:left
+}
+
+.kenzap .kenzap-gallery-1.textBottom.kp-square .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.textBottom.kp-square .kp-list .kp-item{
+  width:25%;
+}
+
+.kenzap .kenzap-gallery-1.kp-vertical .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.kp-vertical .kp-list .kp-item{
+  width:25%;
+  padding:0 15px;
+  float:left
+}
+
+.kenzap .kenzap-gallery-1.textBottom.kp-vertical .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.textBottom.kp-vertical .kp-list .kp-item{
+  width:20%;
+}
+
+.kenzap .kenzap-gallery-1.kp-horizontal .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.kp-horizontal .kp-list .kp-item{
+  width:50%;
+  padding:0 15px;
+  float:left
+}
+
+.kenzap .kenzap-gallery-1.textBottom.kp-horizontal .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.textBottom.kp-horizontal .kp-list .kp-item{
+  width:33.33333%;
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .gallery-box{
+  position:relative;
+  margin:25px 0 25px;
+  padding:0 0 0 40px;
+}
+
+.kenzap .kenzap-gallery-1.textBottom .kp-list .gallery-box{
+  margin:15px 0 15px;
+  padding: 0;
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .gallery-box .kp-info{
+  width: 100%;
+  white-space:nowrap
+}
+
+.kenzap .kenzap-gallery-1.textCenter .kp-list .gallery-box .kp-info{
+  width: 100%;
+  white-space:nowrap;
+  text-align: center;
+  margin:15px 0 15px;
+}
+
+.kenzap .kenzap-gallery-1.textLeft .kp-list .gallery-box .kp-info{
+  bottom: 0;
+  position: absolute;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .kp-info h3{
+  display:inline-block;
+  color:var(--titleColor);
+  font-size:22px;
+  margin:0;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.216667px;
+}
+
+.kenzap .kenzap-gallery-1.textBottom .kp-list .kp-info h3 {
+  display:block;
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .kp-info h3 a{
+  color:var(--titleColor)
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .kp-info ul{
+  display:inline-block;
+  margin:0 0 0 12px;
+  line-height: 1;
+}
+
+.kenzap .kenzap-gallery-1.textBottom .kp-list .kp-info ul {
+  display:block;
+  margin:0;
+}
+
+.kenzap .kenzap-gallery-1 .nothing{
+  cursor: default;
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .kp-info ul li{
+  display:inline-block;
+  position:relative;
+  line-height: 1;
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .kp-info ul li:after{
+  content: "/";
+  font-size: 14px;
+  font-style: italic;
+  position: absolute;
+  right: -2px;
+  top: 1px;
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .kp-info ul li:last-child::after{
+  display:none
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .kp-info ul li a{
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: .05em;
+  display: inline-block;
+  line-height: 1.2;
+  margin: 0 3px 0 0;
+  padding: 0 6px 0 0;
+  vertical-align: middle;
+  z-index: 8;
+  position: relative;
+  color: var(--descriptionAndFiltersColor);
+  cursor: default;
+  -webkit-transition: color .2s ease-out;
+  -moz-transition: color .2s ease-out;
+  transition: color .2s ease-out;
+  text-decoration: none;
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .kp-info ul li:hover a:before{
+  opacity:1
+}
+
+.kenzap .kenzap-gallery-1.kp-square .kp-list .kp-img a:before{
+  display: block;
+  content: "";
+  padding-top: calc((1 / 1) * 100%);
+}
+
+.kenzap .kenzap-gallery-1.kp-vertical .kp-list .kp-img a:before{
+  display: block;
+  content: "";
+  padding-top: calc((4 / 3) * 100%);
+}
+
+.kenzap .kenzap-gallery-1.kp-horizontal .kp-list .kp-img a:before{
+  display: block;
+  content: "";
+  padding-top: calc((3 / 4) * 100%);
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .kp-img > a{
+  background-size:cover;
+  background-position:center center;
+  display:block
+}
+
+.kenzap .kenzap-gallery-1.textBottom .kp-list .kp-info ul li a:before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  opacity: 0;
+}
+
+.kenzap .kenzap-gallery-1.textBottom .kp-list .kp-info ul li:hover a{
+  color:#000;
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .kp-img{
+  width:100%;
+  overflow:hidden;
+  margin:0;
+  
+}
+
+.kenzap .kenzap-gallery-1.textBottom .kp-list .kp-img{
+  margin:0 0 20px;
+  border-radius: var(--borderRadius, 0px);
+}
+
+.kenzap .kenzap-gallery-1 .kp-list .kp-img .img-wrapper{
+  overflow:hidden;
+}
+
+.kenzap .kenzap-gallery-1.kp-zoom-in .kp-list .kp-img a{
+  will-change: transform;
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+  transition: transform .3s;
+}
+
+.kenzap .kenzap-gallery-1.kp-zoom-in .kp-list .kp-img a:hover{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-transition: -webkit-transform 3s cubic-bezier(.165,.84,.44,1);
+  -moz-transition: -moz-transform 3s cubic-bezier(.165,.84,.44,1);
+  transition: transform 3s cubic-bezier(.165,.84,.44,1);
+}
+
+.kenzap .kenzap-gallery-1.kp-zoom-out .kp-list .kp-img a{
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  will-change: transform;
+  -webkit-filter: blur();
+  -webkit-transition: -webkit-transform .3s;
+  -moz-transition: -moz-transform .3s;
+  transition: transform .3s;
+}
+
+.kenzap .kenzap-gallery-1.kp-zoom-out .kp-list .kp-img a:hover{
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: -webkit-transform 3s cubic-bezier(.165,.84,.44,1);
+  -moz-transition: -moz-transform 3s cubic-bezier(.165,.84,.44,1);
+  transition: transform 3s cubic-bezier(.165,.84,.44,1);
+}
+
+.kenzap .kenzap-gallery-1.kp-frame-in .kp-list .kp-img a{
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+  -webkit-transition: 1s cubic-bezier(.075,.82,.165,1);
+  -moz-transition: 1s cubic-bezier(.075,.82,.165,1);
+  transition: 1s cubic-bezier(.075,.82,.165,1);
+}
+
+.kenzap .kenzap-gallery-1.kp-frame-in .kp-list .kp-img a:hover{
+  -webkit-clip-path: inset(20px 20px 20px 20px);
+  clip-path: inset(20px 20px 20px 20px);
+}
+
+.kenzap .kenzap-gallery-1.kp-frame-out .kp-list .kp-img a{
+  -webkit-clip-path: inset(20px 20px 20px 20px);
+  clip-path: inset(20px 20px 20px 20px);
+  -webkit-transition: 1s cubic-bezier(.075,.82,.165,1);
+  -moz-transition: 1s cubic-bezier(.075,.82,.165,1);
+  transition: 1s cubic-bezier(.075,.82,.165,1);
+}
+
+.kenzap .kenzap-gallery-1.kp-frame-out .kp-list .kp-img a:hover{
+  -webkit-clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
+}
+
+.kenzap .kenzap-gallery-1 .fancybox-thumbs {
+  top: auto;
+  width: auto;
+  bottom: 0;
+  left: 0;
+  right : 0;
+  height: 95px;
+  padding: 10px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+  text-align:Center
+}
+
+.kenzap .kenzap-gallery-1 .fancybox-show-thumbs .fancybox-inner {
+  right: 0;
+  bottom: 95px;
+}
+
+.kenzap .kenzap-gallery-1 .fancybox-thumbs__list{
+  display:inline-block
+}
+
+.kenzap .kenzap-gallery-1 .fancybox-infobar{
+  font-size: 18px;
+}
+
+.kenzap .kenzap-gallery-1 .fancybox-thumbs__list a::before {
+  border: 6px solid #fff;
+}
+
+.kenzap .kenzap-gallery-1 .fancybox-thumbs__list a{
+  opacity:.8;
+  transition: all .2s cubic-bezier(.25,.46,.45,.94);
+}
+
+.kenzap .kenzap-gallery-1 .fancybox-thumbs__list a.fancybox-thumbs-active{
+  opacity:1
+}
+
+.kenzap .kenzap-gallery-1.kenzap-md .kp-list .gallery-box .kp-info,
+.kenzap .kenzap-gallery-1.kenzap-sm .kp-list .gallery-box .kp-info,
+.kenzap .kenzap-gallery-1.kenzap-xs .kp-list .gallery-box .kp-info{
+  white-space:normal;
+  left:50px;
+}
+
+.kenzap .kenzap-gallery-1.kenzap-md .kp-list .kp-info ul,
+.kenzap .kenzap-gallery-1.kenzap-sm .kp-list .kp-info ul,
+.kenzap .kenzap-gallery-1.kenzap-xs .kp-list .kp-info ul{
+  display:block;
+  margin:0
+}
+
+.kenzap .kenzap-gallery-1.kenzap-md .kp-list .gallery-box,
+.kenzap .kenzap-gallery-1.kenzap-sm .kp-list .gallery-box,
+.kenzap .kenzap-gallery-1.kenzap-xs .kp-list .gallery-box{
+  padding:0 0 0 55px;
+}
+
+.kenzap .kenzap-gallery-1.textBottom .kp-list .gallery-box{
+  padding: 0;
+}
+
+.kenzap .kenzap-gallery-1.kp-vertical.kenzap-md .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.kp-vertical.kenzap-md .kp-list .kp-item{
+  width:33.33333%;
+}
+
+.kenzap .kenzap-gallery-1.kp-vertical.kenzap-sm .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.kp-vertical.kenzap-sm .kp-list .kp-item,
+.kenzap .kenzap-gallery-1.kp-square.kenzap-sm .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.kp-square.kenzap-sm .kp-list .kp-item{
+  width:50%;
+}
+
+.kenzap .kenzap-gallery-1.kenzap-sm .kp-list .gallery-box,
+.kenzap .kenzap-gallery-1.kenzap-xs .kp-list .gallery-box{
+  margin:15px 0 15px;
+}
+
+.kenzap .kenzap-gallery-1.kp-horizontal.kenzap-sm .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.kp-horizontal.kenzap-sm .kp-list .kp-item,
+.kenzap .kenzap-gallery-1.kp-horizontal.kenzap-xs .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.kp-horizontal.kenzap-xs .kp-list .kp-item,
+.kenzap .kenzap-gallery-1.kp-vertical.kenzap-xs .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.kp-vertical.kenzap-xs .kp-list .kp-item,
+.kenzap .kenzap-gallery-1.kp-square.kenzap-xs .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.kp-square.kenzap-xs .kp-list .kp-item{
+  width:100%;
+}
+
+@media only screen and (min-width: 62px) and (max-width: 75em) {
+  /* 992px and 1200px */
+  .kenzap .kenzap-gallery-1 .kp-list .gallery-box .kp-info{
+    white-space:normal;
+    left:50px;
+  }
+
+  .kenzap .kenzap-gallery-1 .kp-list .kp-info ul{
+    display:block;
+    margin:0
+  }
+
+  .kenzap .kenzap-gallery-1 .kp-list .gallery-box{
+    padding:0 0 0 55px;
+  }
+
+  .kenzap .kenzap-gallery-1.textBottom .kp-list .gallery-box{
+    padding: 0;
+  }
+
+  .kenzap .kenzap-gallery-1.kp-vertical .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.kp-vertical .kp-list .kp-item{
+    width:33.33333%;
+  }
+
+}
+
+@media screen and (max-width: 61.938em) {
+  /* width: 991px; */
+
+  .kenzap .kenzap-gallery-1.kp-vertical.kenzap-md .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.kp-vertical.kenzap-md .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.kp-vertical .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.kp-vertical .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.kp-square .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.kp-square .kp-list .kp-item{
+    width:50%;
+  }
+
+  .kenzap .kenzap-gallery-1 .kp-list .gallery-box{
+    margin:15px 0 15px;
+  }
+
+  .kenzap .kenzap-gallery-1.kp-horizontal .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.kp-horizontal .kp-list .kp-item{
+    width:100%;
+  }
+
+  .kenzap .kenzap-gallery-1 .fancybox-show-thumbs .fancybox-inner {
+    bottom: 0;
+  }
+
+  .kenzap .kenzap-gallery-1 .fancybox-thumbs {
+    display:none
+  }
+}
+
+@media screen and (max-width: 37em) {
+  /* width 480px */
+
+  .kenzap .kenzap-gallery-1.kp-square.kenzap-sm .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.kp-square.kenzap-sm .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.kp-vertical.kenzap-sm .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.kp-vertical.kenzap-sm .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.kp-vertical.kenzap-md .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.kp-vertical.kenzap-md .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.kp-vertical .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.kp-vertical .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.kenzap-sm .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.kenzap-sm .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.kp-square .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.kp-square .kp-list .kp-item{
+    width:100%;
+  }
+}
+
+.kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-md .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-md .kp-list .kp-item,
+.kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-md .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-md .kp-list .kp-item{
+  width:33.33333%;
+}
+
+.kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-sm .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-sm .kp-list .kp-item,
+.kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-sm .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-sm .kp-list .kp-item{
+  width:50%;
+}
+
+.kenzap .kenzap-gallery-1.textBottom.kenzap-sm .kp-list .gallery-box,
+.kenzap .kenzap-gallery-1.textBottom.kenzap-xs .kp-list .gallery-box{
+  margin:15px 0 15px;
+}
+
+.kenzap .kenzap-gallery-1.textBottom.kp-horizontal.kenzap-sm .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.textBottom.kp-horizontal.kenzap-sm .kp-list .kp-item{
+  width:50%
+}
+
+.kenzap .kenzap-gallery-1.textBottom.kp-horizontal.kenzap-xs .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.textBottom.kp-horizontal.kenzap-xs .kp-list .kp-item,
+.kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-xs .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-xs .kp-list .kp-item,
+.kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-xs .kp-list .grid-sizer,
+.kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-xs .kp-list .kp-item{
+  width:100%;
+}
+
+
+
+@media only screen and (min-width: 62px) and (max-width: 75em) {
+  /* 992px and 1200px */
+  .kenzap .kenzap-gallery-1.textBottom .kp-list .gallery-box .kp-info{
+    white-space:normal;
+    left:50px;
+  }
+
+  .kenzap .kenzap-gallery-1.textBottom.kp-square .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-square .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical .kp-list .kp-item{
+    width:33.33333%;
+  }
+
+
+}
+
+@media screen and (max-width: 61.938em) {
+  /* width: 991px; */
+
+  .kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-md .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-md .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-md .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-md .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kp-square .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-square .kp-list .kp-item{
+    width:50%;
+  }
+
+
+  .kenzap .kenzap-gallery-1.textBottom .kp-list .gallery-box{
+    margin:15px 0 15px;
+  }
+
+  .kenzap .kenzap-gallery-1.textBottom.kp-horizontal .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-horizontal .kp-list .kp-item{
+    width:50%;
+  }
+
+  .kenzap .kenzap-gallery-1.textBottom .fancybox-thumbs {
+    display:none
+  }
+}
+
+@media screen and (max-width: 37em) {
+  /* width 480px */
+
+  .kenzap .kenzap-gallery-1.textBottom.kp-horizontal.kenzap-sm .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-horizontal.kenzap-sm .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kp-horizontal .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-horizontal .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-md .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-md .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-sm .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-square.kenzap-sm .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-sm .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-sm .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-md .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical.kenzap-md .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-vertical .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kenzap-sm .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kenzap-sm .kp-list .kp-item,
+  .kenzap .kenzap-gallery-1.textBottom.kp-square .kp-list .grid-sizer,
+  .kenzap .kenzap-gallery-1.textBottom.kp-square .kp-list .kp-item{
+    width:100%;
+  }
+}

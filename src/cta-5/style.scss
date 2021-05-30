@@ -1,0 +1,117 @@
+.kenzap .kpcta6:before,
+.kenzap .kpcta6:after,
+.kenzap .kpcta6 *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kpcta6 ul,
+.kenzap .kpcta6 li,
+.kenzap .kpcta6 p,
+.kenzap .kpcta6 a{
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style:none
+}
+
+.kenzap .kpcta6 .clearfix:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.kenzap .kpcta6.autoPadding {
+  padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kpcta6{
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+.kenzap .kpcta6:hover{
+  opacity: 0.85;
+}
+
+.kenzap .kpcta6 .kenzap-container {
+  max-width: 1270px;
+  margin:0 auto;
+  padding:0 var(--paddings2,0);
+  
+}
+
+.kenzap .kpcta6 .kenzap-container:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.kenzap .kpcta6 .kp-content a{
+  text-transform:uppercase;
+  letter-spacing:2px;
+  display:block;
+  color:var(--textColor, #fff);
+  padding:60px;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  font-size: var(--titleSize, 18px);
+  font-weight:var(--textThickness, 400);
+  line-height:1.2;
+  text-align:center;
+  display:flex;
+  display:-webkit-flex;
+  align-items:center;
+  -webkit-align-items:center;
+  justify-content:center;
+  -webkit-justify-content:center;
+}
+
+.kenzap .kpcta6 .kp-content a:hover{
+  opacity: 0.9;
+} 
+
+.kenzap .kpcta6 .kp-content a .phone-icon{
+  display:inline-block;
+  width:var(--titleSize, 18px);
+  height:var(--titleSize, 18px);
+  margin:1px var(--titleSize, 18px) 0 0;
+  mask-size: contain;
+  mask-image: var(--ctaImage, url('images/phone-icon.svg'));
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  background-color: var(--textColor, #fff);
+}
+
+.kenzap .kpcta6.kenzap-xs .kp-content a{
+  flex-direction:column;
+  padding:60px 20px;
+}
+
+.kenzap .kpcta6.kenzap-xs .kp-content a .phone-icon{
+  margin: 0 0 10px;
+}
+
+@media screen and (max-width: 48em) {
+
+  .kenzap .kpcta6 .kp-content a{
+    flex-direction:column;
+    -webkit-flex-direction:column;
+    padding:60px 20px;
+  }
+
+  .kenzap .kpcta6 .kp-content a .phone-icon{
+    margin: 0 0 10px;
+  }
+}

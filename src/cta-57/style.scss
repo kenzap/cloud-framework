@@ -1,0 +1,138 @@
+.kfl1 {
+  div, span,
+  h1, h2, h3, h4, h5, h6, p, blockquote,
+  a, del, dfn, img, ins, kbd, samp,
+  small, strike, sub, sup, tt, var,
+  center, dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, tbody, tfoot, thead, tr, th, td {
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+  }
+
+  // HTML5 display-role reset for older browsers
+  article, aside, details, figcaption, figure,
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+
+  ol, ul {
+    list-style: none;
+  }
+
+  blockquote, q {
+    quotes: none;
+  }
+
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+}
+
+.kfl1{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.kfl1 .featured-box{
+  width:33.33333%;
+  float:left;
+  text-align:center;
+  padding:60px 0;
+  transition: all 400ms ease-in-out;
+}
+
+.kfl1 .featured-box:nth-child(odd){
+  background:#fff;
+}
+
+.kfl1 .featured-box:nth-child(even){
+  background:#f7f7f7;
+}
+
+.kfl1 .featured-box .kp-img,
+.kfl1 .featured-box img{
+  margin:0 auto 0px;
+	display: block;
+}
+
+.kfl1 .featured-box .kp-img{
+	mask-position:center;
+	-webkit-mask-position:center;
+	mask-repeat:no-repeat;
+	-webkit-mask-repeat:no-repeat;
+  mask-size: contain;
+  mask-position: center center;
+  mask-repeat: no-repeat;
+  mask-image:var(--icon, 'url(unset)');
+  -webkit-mask-image:var(--icon, 'url(unset)');
+  background-color: var(--icolor, #ff0000);
+  transition:all .3s;
+}
+
+.kfl1 .featured-box h3{
+  font-size:32px;
+  margin:0;
+  line-height:38px;
+  transition: all 400ms ease-in-out;
+}
+
+.kfl1 .featured-box .bt1{
+  display:inline-block;
+  padding: 13px 53px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: none;
+  transition: all 250ms ease;
+  -ms-transition: all 250ms ease;
+  -webkit-transition: all 250ms ease;
+}
+
+.kfl1 .featured-box .bt1:hover{
+  background:var(--hbacl,#fff)!important;
+  color:var(--hcl,#333)!important;
+  border-color:var(--hbrcl,#333)!important;
+}
+
+.kfl1 .featured-box ul{
+  padding:0;
+  margin:0;
+  list-style:none
+}
+
+.kfl1 .featured-box ul li{
+  padding: 7px 20px;
+  transition: all 400ms ease-in-out;
+}
+
+@media screen and (max-width: 61.938em) {
+  .kfl1 .featured-box{
+    width:100%;
+  }
+}
+
+.kfl1.hover-enabled .featured-box:hover {
+  background: var(--backgroundHover);
+}
+
+.kfl1.hover-enabled .featured-box:hover .kp-img{
+  background-color: var(--ihover, #ff0000);
+}
+
+.kfl1.hover-enabled .featured-box:hover h3 {
+  color: var(--thover)!important;
+}
+
+.kfl1.hover-enabled .featured-box:hover ul li {
+  color: var(--dhover)!important;
+}

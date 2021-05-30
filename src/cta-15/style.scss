@@ -1,0 +1,32 @@
+.kenzap .kpinf13:before,
+.kenzap .kpinf13:after,
+.kenzap .kpinf13 *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kpinf13 .info-box .kp-content .marquee{
+  color:var(--textColor,#333);
+  font-size:var(--titleSize,180px);
+  line-height:1.2;
+  font-weight:var(--textThickness,400);
+  overflow:hidden;
+  display:none;
+  margin: 0
+}
+
+.kenzap .kpinf13 .info-box .kp-content .kp-p{
+  font-size:var(--titleSize,180px);
+  font-weight:var(--textThickness,400);
+  line-height: 1.2;
+}
+
+.kenzap .kpinf13 .info-box .kp-content .marquee strong{
+  font-weight:800;
+  color:var(--textColor2,#9376df);
+}
+
+
+
+

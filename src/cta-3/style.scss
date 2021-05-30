@@ -1,0 +1,109 @@
+.kenzap .kpcta3:before,
+.kenzap .kpcta3:after,
+.kenzap .kpcta3 *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kpcta3 h4,
+.kenzap .kpcta3 img,
+.kenzap .kpcta3 ul,
+.kenzap .kpcta3 li,
+.kenzap .kpcta3 p,
+.kenzap .kpcta3 a{
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style:none
+}
+
+.kenzap .kpcta3 .clearfix:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.kenzap .kpcta3.autoPadding {
+  padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kpcta3 .kenzap-container {
+  max-width: 1270px;
+  margin:0 auto;
+  padding:0 var(--paddings2,0);
+}
+
+.kenzap .kpcta3 .kenzap-container:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.kenzap .kpcta3{
+  padding:30px;
+  margin:30px 30px;
+}
+
+.kenzap .kpcta3 .kp-content{
+  border:10px solid var(--textColor, #fed841);
+  outline:30px solid var(--textColor3, #111);
+  border-radius: var(--borderRadius, 0px);
+  padding:220px 20px;
+  text-align:center;
+}
+
+.kenzap .kpcta3 .kp-content .kp-h4,
+.kenzap .kpcta3 .kp-content h4{
+  color: var(--textColor2, #eb2f5b);
+  font-weight: 400;
+  font-size: var(--descriptionSize, 12px);
+  line-height:1.6;
+  margin: 0 0 15px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+}
+
+.kenzap .kpcta3 .kp-content .kp-p,
+.kenzap .kpcta3 .kp-content p{
+  font-weight:var(--textThickness, 700); ;
+  text-transform:uppercase;
+  font-size:var(--titleSize, 56px);
+  line-height:1.2;
+  margin:0;
+  color:#fff;
+}
+
+.kenzap .kpcta3 .kp-content .kp-p a,
+.kenzap .kpcta3 .kp-content p a{
+  color:var(--textColor2, #eb2f5b);
+  border-bottom: 3px solid var(--textColor2, #eb2f5b);
+  transition:all .3s
+}
+
+.kenzap .kpcta3 .kp-content .kp-p a:hover,
+.kenzap .kpcta3 .kp-content p a:hover{
+  color:var(--textColor, #fed841);
+  border-bottom: 3px solid var(--textColor, #fed841);
+}
+
+.kenzap .kpcta3.kenzap-sm .kp-content .kp-p a,
+.kenzap .kpcta3.kenzap-sm .kp-content p a{
+  display:inline-block
+}
+
+@media screen and (max-width: 48em) {
+  /* width 768px */
+
+  .kenzap .kpcta3 .kp-content p a{
+    display:inline-block
+  }
+}

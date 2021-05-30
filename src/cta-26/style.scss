@@ -1,0 +1,491 @@
+@keyframes kenzap-timeline-1-pulse {
+  0% {
+    box-shadow: 0 0 8px var(--timeLineColor), inset 0 0 8px var(--timeLineColor);
+  }
+  50% {
+    box-shadow: 0 0 16px var(--timeLineColor), inset 0 0 14px var(--timeLineColor);
+  }
+  100% {
+    box-shadow: 0 0 8px var(--timeLineColor), inset 0 0 8px var(--timeLineColor);
+  }
+}
+
+.kenzap .kenzap-timeline-1 :before,
+.kenzap .kenzap-timeline-1 :after,
+.kenzap .kenzap-timeline-1 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kenzap-timeline-1.autoPadding {
+  padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kenzap-timeline-1 .kenzap-container {
+  max-width: 1170px;
+  padding: 0 var(--paddings2,0);
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.kenzap .kenzap-timeline-1.kenzap-row {
+  margin: 0 -15px;
+}
+
+.kenzap .kenzap-timeline-1 .kenzap-col-6 {
+  width: 50%;
+  float: left;
+  padding: 0 15px;
+}
+
+.kenzap .kenzap-timeline-1 {
+  background: #fff
+}
+
+.kenzap .kenzap-timeline-1 .timeline {
+  position: relative;
+  padding: 70px 0;
+}
+
+.kenzap .kenzap-timeline-1 .timeline:before {
+  content: "";
+  display: block;
+  width: 2px;
+  background: -moz-linear-gradient(top, rgba(228, 228, 228, 0) 0%, rgba(228, 228, 228, 0.8) 10%, rgba(228, 228, 228, 1) 19%, rgba(228, 228, 228, 1) 20%, rgba(228, 228, 228, 1) 50%, rgba(228, 228, 228, 1) 80%, rgba(228, 228, 228, 1) 81%, rgba(228, 228, 228, 0.8) 90%, rgba(228, 228, 228, 0) 100%);
+  background: -webkit-linear-gradient(top, rgba(228, 228, 228, 0) 0%, rgba(228, 228, 228, 0.8) 10%, rgba(228, 228, 228, 1) 19%, rgba(228, 228, 228, 1) 20%, rgba(228, 228, 228, 1) 50%, rgba(228, 228, 228, 1) 80%, rgba(228, 228, 228, 1) 81%, rgba(228, 228, 228, 0.8) 90%, rgba(228, 228, 228, 0) 100%);
+  background: linear-gradient(to bottom, rgba(228, 228, 228, 0) 0%, rgba(228, 228, 228, 0.8) 10%, rgba(228, 228, 228, 1) 19%, rgba(228, 228, 228, 1) 20%, rgba(228, 228, 228, 1) 50%, rgba(228, 228, 228, 1) 80%, rgba(228, 228, 228, 1) 81%, rgba(228, 228, 228, 0.8) 90%, rgba(228, 228, 228, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00e4e4e4', endColorstr='#00e4e4e4', GradientType=0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content .kenzap-row {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  margin: 0 -15px 40px;
+  position: relative;
+  z-index: 2
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content {
+  position: relative
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content:before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 4px solid var(--timeLineColor);
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:after {
+  display: block;
+  content: '';
+  position: absolute;
+  z-index: 0;
+  width: 16px;
+  height: 16px;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  -webkit-box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 27px 0 rgba(0, 0, 0, 0.5);
+  -webkit-transition: opacity .8s;
+  -o-transition: opacity .8s;
+  -moz-transition: opacity .8s;
+  transition: opacity .8s;
+}
+
+.kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:hover::after {
+  opacity: 1;
+  -webkit-animation: kenzap-timeline-1-pulse 2s infinite;
+  -moz-animation: kenzap-timeline-1-pulse 2s infinite;
+  -o-animation: kenzap-timeline-1-pulse 2s infinite;
+  animation: kenzap-timeline-1-pulse 2s infinite;
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content:last-child .kenzap-row {
+  margin: 0 -15px;
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content .kenzap-row > div:first-child {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content .time {
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(odd) .time,
+.kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(even) .info {
+  text-align: right
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(even) .time,
+.kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(odd) .info {
+  text-align: left
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content .time {
+  margin: 0 25px;
+  max-width: 350px;
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content .info {
+  margin: 0 25px;
+  max-width: 350px;
+  padding: 23px 30px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 350px;
+  -webkit-transition: all .4s;
+  -o-transition: all .4s;
+  -moz-transition: all .4s;
+  transition: all .4s;
+  background: #fff;
+  -webkit-box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);
+}
+
+.kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .time,
+.kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .info {
+  margin: 0 25px 0 30px
+}
+
+.kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .time,
+.kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .info {
+  margin: 0 30px 0 25px
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(odd) .info:before {
+  content: "";
+  display: block;
+  width: 4px;
+  background: var(--timeLineColor);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(even) .info:before {
+  content: "";
+  display: block;
+  width: 4px;
+  background: var(--timeLineColor);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content .info h3 {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 8px;
+  font-weight: 500;
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content .info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.kenzap .kenzap-timeline-1 .timeline .timeline-content .time > div {
+  line-height: 1.1;
+  font-size: 18px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(odd) .info,
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(even) .info,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(odd) .info,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(even) .info {
+  width: 100%
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .kenzap-container,
+.kenzap .kenzap-timeline-1.kenzap-xs .kenzap-container {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm.kp-animate .timeline .timeline-content:after,
+.kenzap .kenzap-timeline-1.kenzap-xs.kp-animate .timeline .timeline-content:after {
+  display: none
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .time,
+.kenzap .kenzap-timeline-1.kenzap-sm.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .info,
+.kenzap .kenzap-timeline-1.kenzap-sm.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .time,
+.kenzap .kenzap-timeline-1.kenzap-sm.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .info,
+.kenzap .kenzap-timeline-1.kenzap-xs.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .time,
+.kenzap .kenzap-timeline-1.kenzap-xs.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .info,
+.kenzap .kenzap-timeline-1.kenzap-xs.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .time,
+.kenzap .kenzap-timeline-1.kenzap-xs.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .info {
+  margin: 0 25px
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(odd) .time,
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(even) .time,
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(odd) .info,
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(even) .info,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(odd) .time,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(even) .time,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(odd) .info,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(even) .info {
+  text-align: left;
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(odd) > div,
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(even) > div,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(odd) > div,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(even) > div {
+  position: relative;
+  margin: 0 0 40px;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:last-child .kenzap-row,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:last-child .kenzap-row {
+  margin: 0;
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(odd) > div > div:nth-child(odd),
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(even) > div > div:nth-child(even),
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(odd) > div > div:nth-child(odd),
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(even) > div > div:nth-child(even) {
+  order: 1;
+  transform: translateX(0) rotate3d(0, 0, 1, -90deg);
+  width: 120px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -35px;
+  margin: auto
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(odd) > div > div:nth-child(even),
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(even) > div > div:nth-child(odd),
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(odd) > div > div:nth-child(even),
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(even) > div > div:nth-child(odd) {
+  order: 2;
+  width: 100%;
+  padding: 0 0 0 100px;
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content .time,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content .time {
+  width: 100px;
+  max-width: auto;
+  margin: 0;
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content .info,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content .info {
+  margin: 0
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content:nth-child(even) .info:before,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content:nth-child(even) .info:before {
+  content: "";
+  display: block;
+  width: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content .kenzap-row > div:first-child,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content .kenzap-row > div:first-child {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: flex-start;
+  -webkit-justify-content: flex-start;
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline::before,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline::before {
+  left: 70px;
+  right: auto
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm .timeline .timeline-content::before,
+.kenzap .kenzap-timeline-1.kenzap-xs .timeline .timeline-content::before {
+  left: 59px;
+  right: auto;
+}
+
+.kenzap .kenzap-timeline-1.kenzap-sm.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .time,
+.kenzap .kenzap-timeline-1.kenzap-sm.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .info,
+.kenzap .kenzap-timeline-1.kenzap-sm.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .time,
+.kenzap .kenzap-timeline-1.kenzap-sm.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .info,
+.kenzap .kenzap-timeline-1.kenzap-xs.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .time,
+.kenzap .kenzap-timeline-1.kenzap-xs.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .info,
+.kenzap .kenzap-timeline-1.kenzap-xs.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .time,
+.kenzap .kenzap-timeline-1.kenzap-xs.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .info {
+  margin: 0
+}
+
+@media screen and (max-width: 61.938em) {
+  /* width: 991px; */
+
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(odd) .info,
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(even) .info {
+    width: 100%
+  }
+
+  .kenzap .kenzap-timeline-1 .kenzap-container {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:after {
+    display: none
+  }
+
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .time,
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .info,
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .time,
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .info {
+    margin: 0 25px
+  }
+
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(odd) .time,
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(even) .time,
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(odd) .info,
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(even) .info {
+    text-align: left;
+  }
+
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(odd) > div,
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(even) > div {
+    position: relative;
+    margin: 0 0 40px;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start
+  }
+
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content:last-child .kenzap-row {
+    margin: 0;
+  }
+
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(odd) > div > div:nth-child(odd),
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(even) > div > div:nth-child(even) {
+    order: 1;
+    transform: translateX(0) rotate3d(0, 0, 1, -90deg);
+    width: 120px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -35px;
+    margin: auto
+  }
+
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(odd) > div > div:nth-child(even),
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(even) > div > div:nth-child(odd) {
+    order: 2;
+    width: 100%;
+    padding: 0 0 0 100px;
+  }
+
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content .time {
+    width: 100px;
+    max-width: auto;
+    margin: 0;
+  }
+
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content .info {
+    margin: 0
+  }
+
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content:nth-child(even) .info:before {
+    content: "";
+    display: block;
+    width: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content .kenzap-row > div:first-child {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+  }
+
+  .kenzap .kenzap-timeline-1 .timeline::before {
+    left: 70px;
+    right: auto
+  }
+
+  .kenzap .kenzap-timeline-1 .timeline .timeline-content::before {
+    left: 59px;
+    right: auto;
+  }
+
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .time,
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .info,
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(odd ) > div:hover .time,
+  .kenzap .kenzap-timeline-1.kp-animate .timeline .timeline-content:nth-child(even) > div:hover .info {
+    margin: 0
+  }
+
+}
+

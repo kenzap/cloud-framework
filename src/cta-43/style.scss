@@ -1,0 +1,208 @@
+.kenzap .kenzap-pricing-1 *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kenzap-pricing-1 img,
+.kenzap .kenzap-pricing-1 ul,
+.kenzap .kenzap-pricing-1 li,
+.kenzap .kenzap-pricing-1 p,
+.kenzap .kenzap-pricing-1 a{
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style:none
+}
+
+.kenzap .kenzap-pricing-1 .kenzap-container{
+  max-width:1170px;
+  padding:0 var(--paddings2,0);
+  margin:0 auto;
+}
+
+.kenzap .kenzap-pricing-1.autoPadding {
+  padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kenzap-pricing-1 .kenzap-row{
+  margin:0 0px;
+  overflow:hidden;
+}
+
+.kenzap .kenzap-pricing-1 .kenzap-col-4{
+  width:33.33333%;
+  float:left;
+  padding:0 15px;
+}
+
+.kenzap .kenzap-pricing-1{
+  background:#1b3795;
+  padding:85px 0;
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box{
+  padding:50px 20px 60px 20px;
+  text-align:center
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box.best-seller{
+  background: rgba(0,0,0,0.2);
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box img{
+  margin:0 auto 30px;
+  cursor: pointer;
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box h3{
+  margin-bottom: 12px;
+  //text-transform: uppercase;
+  margin:0 0 12px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  line-height: 28px;
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box p{
+  margin: 0 0 15px;
+  padding:0 60px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #fff;
+  line-height: 26px;
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box .kp-price{
+  display:block;
+  margin: 22px 0;
+  padding:30px 0;
+  border-top:1px solid rgba(255,255,255,0.15);
+  border-bottom:1px solid rgba(255,255,255,0.15);
+  font-weight: 500;
+  font-size: 55px;
+  color: #fff;
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box .kp-price sup{
+  top:0;
+  bottom:0;
+  height: auto;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box .kp-price sub{
+  top:0;
+  bottom:0;
+  height: auto;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box ul{
+  padding:0 0 30px;
+  list-style:none;
+  margin:0;
+  color: white;
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box ul li{
+  margin-bottom: 18px;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box ul li:last-child{
+  margin:0;
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box .kp-link{
+  display:inline-block;
+  padding: 15px 35px 13px 35px;
+  background: var(--bbc, #0abc5f);
+  border-radius: 4px;
+  border-width: 0;
+  transition: all 0.3s;
+  //text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  border-style:solid;
+  border-width:0px;
+  color: var(--btc, #fff);
+  line-height: 1.6;
+  text-decoration:none;
+}
+
+.kenzap .kenzap-pricing-1 .pricing-box .kp-link:hover{
+  color: var(--hcl, #0abc5f)!important;
+  background: var(--hbacl, #fff)!important;
+  border-color: var(--hbrcl, #fff)!important;;
+}
+
+.kenzap .kenzap-pricing-1.kenzap-md .kenzap-row{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.kenzap .kenzap-pricing-1.kenzap-md .kenzap-col-4{
+  width:50%;
+  float:none;
+}
+
+.kenzap .kenzap-pricing-1.kenzap-md .pricing-box p{
+  padding:0;
+}
+
+.kenzap .kenzap-pricing-1.kenzap-sm .kenzap-col-4,
+.kenzap .kenzap-pricing-1.kenzap-xs .kenzap-col-4{
+  width:100%;
+  float:none;
+}
+
+@media screen and (max-width: 61.938em) {
+  /* width: 991px; */
+
+  .kenzap .kenzap-pricing-1 .kenzap-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap:wrap
+  }
+
+  .kenzap .kenzap-pricing-1 .kenzap-col-4{
+    width:50%;
+    float:none;
+  }
+
+  .kenzap .kenzap-pricing-1 .pricing-box p{
+    padding:0;
+  }
+}
+
+
+@media screen and (max-width: 48em) {
+  /* width 768px */
+
+  .kenzap .kenzap-pricing-1.kenzap-md .kenzap-col-4,
+  .kenzap .kenzap-pricing-1 .kenzap-col-4{
+    width:100%;
+    float:none;
+  }
+
+}

@@ -1,0 +1,212 @@
+.kenzap .kpcta1 :before,
+.kenzap .kpcta1 :after,
+.kenzap .kpcta1 *{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.kenzap .kpcta1 h3,
+.kenzap .kpcta1 ul,
+.kenzap .kpcta1 li,
+.kenzap .kpcta1 p,
+.kenzap .kpcta1 a{
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+  border: none;
+  text-decoration: none;
+  list-style:none
+}
+
+.kenzap .kpcta1 .clearfix:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.kenzap .kpcta1.autoPadding {
+  padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kpcta1 .kenzap-container {
+  max-width: 1170px;
+  margin:0 auto;
+  padding:0 var(--paddings2,0);
+}
+
+.kenzap .kpcta1 .kenzap-container:after{
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.kenzap .kpcta1 .kenzap-row{
+  display:flex;
+  display:-webkit-flex;
+}
+
+.kenzap .kpcta1 .kenzap-col-6{
+  width:50%;
+  padding:0;
+  position:relative;
+}
+
+.kenzap .kpcta1 .kp-img{
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size: cover;
+}
+
+.kenzap .kpcta1 .kp-content{
+  min-height:500px;
+  padding:70px 50px;
+}
+
+.kenzap .kpcta1 .kp-content.kp-right{
+  padding-left:0; 
+}
+
+.kenzap .kpcta1 .kp-content.kp-left{
+  padding-right:0; 
+}
+
+.kenzap .kpcta1 .kp-content .kp-h2,
+.kenzap .kpcta1 .kp-content h2{
+  color:#fff;
+  margin:0 0 20px;
+  font-size: calc(var(--titleSize, 26px) + (35 - 26) * ((100vw - 300px) / (1600 - 300)));
+  line-height: 1.2;
+  font-weight:var(--textThickness, 700);
+}
+
+.kenzap .kpcta1 .kp-content .kp-p,
+.kenzap .kpcta1 .kp-content p{
+  color:#fff;
+  font-size:var(--descriptionSize, 15px);
+  font-weight:400;
+  line-height:1.6;
+  margin:0 0 10px;
+}
+
+.kenzap .kpcta1 .kp-content .kp-a,
+.kenzap .kpcta1 .kp-content > a{
+  color:#fff;
+  font-size:15px;
+  font-weight:500;
+  line-height:30px;
+  padding:15px 50px;
+  display:inline-block;
+  margin:40px 0 0 0px;
+  border:1px solid #fff;
+  border-radius: var(--borderRadius, 0px);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.kp-a:first-child{
+  margin: 0!important;
+}
+
+.kenzap .kpcta1 .kp-content > a:empty{
+  display: none;
+}
+
+.kenzap .kpcta1 .kp-content a:hover{
+  background:var(--hbacl, #9376df)!important;
+  color:var(--hcl, #9376df)!important;
+  border-color:var(--hbrcl, #9376df)!important;
+}
+
+.kenzap .kpcta1.kenzap-md .kenzap-row,
+.kenzap .kpcta1.kenzap-xs .kenzap-row,
+.kenzap .kpcta1.kenzap-sm .kenzap-row{
+  flex-direction:column;
+  -webkit-flex-direction:column;
+}
+
+.kenzap .kpcta1.kenzap-md .kenzap-col-6,
+.kenzap .kpcta1.kenzap-xs .kenzap-col-6,
+.kenzap .kpcta1.kenzap-sm .kenzap-col-6{
+  width:100%;
+}
+
+.kenzap .kpcta1.kenzap-md .kp-content,
+.kenzap .kpcta1.kenzap-xs .kp-content,
+.kenzap .kpcta1.kenzap-sm .kp-content{
+  min-height:auto
+}
+
+.kenzap .kpcta1.kenzap-md .kp-img,
+.kenzap .kpcta1.kenzap-xs .kp-img,
+.kenzap .kpcta1.kenzap-sm .kp-img{
+  position:relative
+}
+
+.kenzap .kpcta1.kenzap-md .kp-img:before,
+.kenzap .kpcta1.kenzap-sm .kp-img:before{
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: calc((8 / 19) * 100%);
+}
+
+.kenzap .kpcta1.kenzap-xs .kp-img:before{
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: calc((19 / 18) * 100%);
+}
+
+@media screen and (max-width: 61.938em) {
+/* width: 991px; */
+
+  .kenzap .kpcta1 .kenzap-row{
+    flex-direction:column;
+    -webkit-flex-direction:column;
+  }
+
+  .kenzap .kpcta1 .kenzap-col-6{
+    width:100%;
+  }
+
+  .kenzap .kpcta1 .kp-content{
+    min-height:auto
+  }
+
+  .kenzap .kpcta1 .kp-img{
+    position:relative
+  }
+
+  .kenzap .kpcta1 .kp-img:before{
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: calc((8 / 19) * 100%);
+  }
+
+}
+
+@media screen and (max-width: 30em) {
+/* width 480px */
+
+  .kenzap .kpcta1.kenzap-md .kp-img:before,
+  .kenzap .kpcta1.kenzap-sm .kp-img:before,
+  .kenzap .kpcta1 .kp-img:before{
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: calc((19 / 18) * 100%);
+  }
+}

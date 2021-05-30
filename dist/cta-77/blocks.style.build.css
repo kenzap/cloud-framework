@@ -1,0 +1,1 @@
+.kenzap .kp-div-1 .kenzap-container{max-width:1270px;padding:0 var(--paddings2, 0);margin:0 auto}.kenzap .kp-div-1{overflow:hidden;max-width:var(--maxWidth, 2000px) !important;margin:auto}.kenzap .kp-div-1.autoPadding{padding:calc(30px + (var(--height) - 30) * ((100vw - 300px) / (1600 - 300))) 0 !important}

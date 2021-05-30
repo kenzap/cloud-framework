@@ -1,0 +1,142 @@
+.kenzap .kp-featured-1 :before,
+.kenzap .kp-featured-1 :after,
+.kenzap .kp-featured-1 * {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.kenzap .kp-featured-1 ul,
+.kenzap .kp-featured-1 li,
+.kenzap .kp-featured-1 p,
+.kenzap .kp-featured-1 a {
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+	border: none;
+	list-style: none;
+}
+
+.kenzap .kp-featured-1 .kenzap-container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 var(--paddings2, 0);
+
+}
+
+.kenzap .kp-featured-1.autoPadding {
+	padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+}
+
+.kenzap .kenzap-featured-list-3 {
+	overflow-x: hidden;
+}
+
+.kenzap .kp-featured-1 .kp-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 15px 0;
+}
+
+.kenzap .kp-featured-1 .kp-content .kp-box {
+	position: relative;
+	width: 33.33333%;
+	padding: 0 15px;
+}
+
+.kenzap .kp-featured-1 .kp-wrapper {
+	padding: 25px 20px;
+}
+
+.kenzap .kp-featured-1 .kp-wrapper:hover {
+	border-radius: 5px;
+	background: #fff;
+	-webkit-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.09);
+	-moz-box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.09);
+	box-shadow: 0px 0px 14px 5px rgba(0, 0, 0, 0.09);
+	position: absolute;
+	z-index: 999999;
+}
+
+.kenzap .kp-featured-1 .kp-box h3 {
+	margin: 0;
+	font-weight: 400;
+	clear: unset;
+}
+
+.kenzap .kp-featured-1 .kp-box .kp-img {
+	float: left;
+	display: block;
+	width: 33px;
+	height: 33px;
+	background: var(--icon, 'url(unset)') no-repeat center center;
+	background-size: cover;
+	margin: 0 27px 0 0;
+}
+
+.kenzap .kp-featured-1 .kp-box p {
+	padding: 15px 0 0 60px;
+	font-size: 14px;
+	color: #6b6b6b;
+	line-height: 21px;
+	margin: 0;
+	font-weight: 400;
+	display: none;
+}
+
+.kenzap .kp-featured-1 .kp-box p.vis {
+	display: block;
+}
+
+.kenzap .kp-featured-1 .kp-box .kp-wrapper:hover p {
+	display: block;
+}
+
+.kenzap .kp-featured-1.kenzap-md .kp-content .kp-box {
+	width: 50%;
+}
+
+.kenzap .kp-featured-1.kenzap-xs .kp-content .kp-box,
+.kenzap .kp-featured-1.kenzap-sm .kp-content .kp-box {
+	width: 100%;
+}
+
+.kenzap .kp-featured-1.kenzap-md .kp-content .kp-wrapper,
+.kenzap .kp-featured-1.kenzap-xs .kp-content .kp-wrapper,
+.kenzap .kp-featured-1.kenzap-sm .kp-content .kp-wrapper {
+	position: relative
+}
+
+.kenzap .kp-featured-1.kenzap-md .kp-box p,
+.kenzap .kp-featured-1.kenzap-xs .kp-box p,
+.kenzap .kp-featured-1.kenzap-sm .kp-box p {
+	display: block
+}
+
+@media screen and (max-width: 61.938em) {
+
+	/* width: 991px; */
+	.kenzap .kp-featured-1 .kp-content .kp-box {
+		width: 50%;
+	}
+
+	.kenzap .kp-featured-1 .kp-content .kp-wrapper {
+		position: relative
+	}
+
+	.kenzap .kp-featured-1 .kp-box p {
+		display: block
+	}
+}
+
+
+@media screen and (max-width: 48em) {
+	/* width 768px */
+
+	.kenzap .kp-featured-1.kenzap-md .kp-content .kp-box,
+	.kenzap .kp-featured-1 .kp-content .kp-box {
+		width: 100%;
+	}
+}

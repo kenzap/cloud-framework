@@ -1,0 +1,271 @@
+// .kenzap .kenzap-gallery-7.autoPadding {
+//   padding: calc(30px + (var(--paddings) - 30) * ((100vw - 300px) / (1600 - 300))) 0;
+// }
+
+// .kenzap .kenzap-gallery-7 :before,
+// .kenzap .kenzap-gallery-7 :after,
+// .kenzap .kenzap-gallery-7 *{
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
+
+// .kenzap .kenzap-gallery-7 img,
+// .kenzap .kenzap-gallery-7 ul,
+// .kenzap .kenzap-gallery-7 li,
+// .kenzap .kenzap-gallery-7 p,
+// .kenzap .kenzap-gallery-7 a{
+//   padding: 0;
+//   margin: 0;
+//   box-shadow: none;
+//   border: none;
+//   text-decoration: none;
+//   list-style:none
+// }
+
+// .kenzap .kenzap-gallery-7 .kenzap-container{
+//   max-width:1270px;
+//   padding:0 15px;
+//   margin:0 auto;
+// }
+
+// .kenzap .kenzap-gallery-7 .kp-list{
+//   margin:0 auto;
+//   max-width:1100px
+// }
+
+// .kenzap .kenzap-gallery-7 .kp-list:after {
+//   content: '';
+//   display: block;
+//   clear: both;
+// }
+
+// .kenzap .kenzap-gallery-7 .kp-list .kp-img:first-child{
+//   width:50%;
+//   z-index:-1;
+//   padding:50px 0 0;
+// }
+
+// .kenzap .kenzap-gallery-7 .kp-list .kp-img:last-child{
+//   width:65%;
+//   margin:0 0 0 35%;
+//   position:absolute;
+//   top:0;
+//   right:0
+// }
+
+// .kenzap .kenzap-gallery-7 .kp-list .gallery-box{
+//   position:relative;
+//   overflow:hidden;
+// }
+
+// .kenzap .kenzap-gallery-7 .kp-list .kp-img img{
+//   width:100%;
+//   display:block
+// }
+
+// .kenzap .kenzap-gallery-7 .kp-list .kp-img .kp-info{
+//   padding: 0 7% 0 40%
+// }
+
+
+// .kenzap .kenzap-gallery-7 .kp-list .kp-img .kp-info h3{
+//   font-size: 44px;
+//   line-height: 1;
+//   font-weight: 500;
+//   color: #000;
+//   text-transform: uppercase;
+//   padding:30px 0 20px;
+//   margin:0 0 20px;
+//   position:relative
+// }
+
+// .kenzap .kenzap-gallery-7 .kp-list .kp-img .kp-info h3:before{
+//   display:block;
+//   content: "";
+//   width:100px;
+//   height:2px;
+//   background:#000;
+//   background:var(--titleColor);
+//   position:absolute;
+//   bottom:0;
+//   left:0;
+// }
+
+// .kenzap .kenzap-gallery-7 .kp-list .kp-img .kp-info p{
+//   font-size: 15px;
+//   line-height: 27px;
+//   font-weight: 400;
+//   margin:0 0 25px;
+//   color: #838383;
+// }
+
+// .kenzap .kenzap-gallery-7 .kp-list .kp-img .kp-info a{
+//   display:inline-block;
+//   padding:10px 37px;
+//   color:#000;
+//   color: var(--buttonTextColor);
+//   border:1px solid #000;
+//   border:1px solid var(--buttonTextColor);
+//   background:  var(--buttonBackgroundColor);
+//   position: relative;
+//   width: auto;
+//   margin: 0;
+//   font-size: 12px;
+//   line-height: 2em;
+//   letter-spacing: .1em;
+//   font-weight: 500;
+//   text-transform: uppercase;
+//   outline: 0;
+//   box-sizing: border-box;
+//   border-radius: 0;
+//   -webkit-appearance: none;
+//   -webkit-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+//   -moz-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+//   transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out;
+//   cursor: pointer;
+//   border-radius: var(--buttonBorderRadius);
+// }
+
+// .kenzap .kenzap-gallery-7 .kp-list .kp-img .kp-info a:hover{
+//   color:#fff;
+//   color:var(--buttonBackgroundColor);
+//   background:#000;
+//   background:var(--buttonTextColor);
+// }
+
+// .kenzap .kenzap-gallery-7.kenzap-sm .kp-list .kp-img:first-child,
+// .kenzap .kenzap-gallery-7.kenzap-xs .kp-list .kp-img:last-child{
+//   width:100%;
+//   position:relative;
+//   margin:0;
+// }
+
+// .kenzap .kenzap-gallery-7.kenzap-sm .kp-list .kp-img:first-child,
+// .kenzap .kenzap-gallery-7.kenzap-xs .kp-list .kp-img:first-child{
+//   display:none
+// }
+
+// .kenzap .kenzap-gallery-7.kenzap-sm .kp-list .kp-img:last-child,
+// .kenzap .kenzap-gallery-7.kenzap-xs .kp-list .kp-img:last-child{
+//   width:100%;
+//   position:relative;
+//   margin:0;
+// }
+
+// .kenzap .kenzap-gallery-7.kenzap-sm .kp-list .kp-img .kp-info,
+// .kenzap .kenzap-gallery-7.kenzap-xs .kp-list .kp-img .kp-info{
+//   padding:0;
+// }
+
+// @media screen and (max-width: 61.938em)  {
+//   /* width 480px */
+
+//   .kenzap .kenzap-gallery-7 .kp-list .kp-img:first-child{
+//     display:none
+//   }
+
+//   .kenzap .kenzap-gallery-7 .kp-list .kp-img:last-child{
+//     width:100%;
+//     position:relative;
+//     margin:0;
+//   }
+
+//   .kenzap .kenzap-gallery-7 .kp-list .kp-img .kp-info{
+//     padding:0;
+//   }
+
+// }
+
+.kenzap .kenzap-gallery-7 .remove {
+  opacity: 0;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0;
+  border: 0;
+  background: #000;
+  border-radius: 50%;
+  color: white;
+  z-index: 99;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  font-family: dashicons;
+  font-weight: 400;
+  font-style: normal;
+  vertical-align: top;
+
+  &:hover {
+    color: #CCC;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.kenzap .kenzap-gallery-7 .gallery-box:hover .remove {
+  opacity: 1;
+}
+
+.kenzap .kenzap-gallery-7 .addWhite {
+  position: absolute;
+  display: none;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 5px;
+  padding: 5px;
+  border: 0;
+  background: white;
+  box-shadow: inset 0 0 50px white;
+  color: rgba(10, 24, 41, 0.7);
+  cursor: pointer;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  &:hover {
+    color: #191e23;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.kenzap .kenzap-gallery-7 {
+  position: relative;
+}
+.kenzap .kenzap-gallery-7-link-popover {
+  z-index: 10000;
+}
+.kenzap .kenzap-gallery-7-link-popover > div {
+  display: flex;
+  justify-content: center;
+  padding: 10px 20px;
+  align-items: center;
+
+  & div {
+    padding: 0 5px;
+    min-width: 170px;
+  }
+}
+
+.kenzap .kenzap-gallery-7.selected {
+
+  & .addWhite {
+    display: flex;
+  }
+
+  .editPadding {
+    padding: 0 0 100px;
+  }
+}

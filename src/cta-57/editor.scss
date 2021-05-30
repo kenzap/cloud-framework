@@ -1,0 +1,80 @@
+.kenzap .kfl1 .remove {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0;
+  border: 0;
+  background: white;
+  border-radius: 50%;
+  color: black;
+  z-index: 99;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  font-family: dashicons;
+  font-weight: 400;
+  font-style: normal;
+  vertical-align: top;
+
+  &:hover {
+    color: red;
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+    opacity: 1;
+  }
+}
+
+.kenzap .kfl1 .featured-box:hover .remove{
+  opacity: 1;
+}
+
+.kenzap .wp-block-kenzap-cta-57 .kenzap-add {
+	position: absolute;
+	display: none;
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 5px;
+	padding: 5px;
+	border: 0;
+	background: white;
+	box-shadow: inset 0 0 50px white;
+	color: rgba(10,24,41,.7);
+	cursor: pointer;
+	text-align: center;
+	flex-direction: column;
+	justify-content: center;
+  align-items: center;
+  transition: all .2s;
+  
+  span {
+	  display: block;
+	  margin-bottom: 5px;
+  }
+
+  &:hover {
+    color: #191e23;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.kenzap .wp-block-kenzap-cta-57 .editPadding {
+	transition: all .2s;
+}
+
+.kenzap .is-selected .wp-block-kenzap-cta-57{
+  
+	& .kenzap-add {
+    display: flex;
+	}
+  
+	.editPadding {
+	  padding: 0 0 100px;
+	 }
+}
